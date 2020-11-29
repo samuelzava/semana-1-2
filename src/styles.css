@@ -76,9 +76,9 @@
   }
   
   .servicios-title {
-    font-size: 28px;
-    padding-bottom: 3rem;
-    padding-top: 1rem;
+    font-size: 40px;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
     font-family: 'times';
   }
   
@@ -119,10 +119,10 @@
   }
   
   .integrantes-title {
-    font-size: 28px;
-    padding-bottom: 3rem;
+    font-size: 40px;
+    padding-bottom: 2rem;
     padding-top: 1rem;
-    font-family: 'Sansita Swashed';
+    font-family: 'times';
   }
   
   .integrantes-cards {
