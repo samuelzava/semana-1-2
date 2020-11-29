@@ -7,6 +7,10 @@
 </head>
 
 <style>
+    body{
+        width: 1400px;
+        font-family: 'Arial Narrow';
+    }
 
     /* Style de la Sección 2*/
     .center{
@@ -16,6 +20,8 @@
     .section2{
         background-color: rgb(179, 255, 254);
         padding: 10px;
+        margin-top: 20px;
+        
     }
 
     .section2_a{
@@ -30,8 +36,15 @@
     .imagen_s2{
         width: 250px; 
         height: 200px;
-        border­radius: 100%;
+        border-radius: 100%;
         overflow: hidden;        
+    }
+
+    .texto_s2{
+        padding: 5%;
+        overflow: hidden;
+        text-align: justify;
+
     }
 
     .box {
@@ -40,18 +53,16 @@
         float: left;
         width: 33.33%;
         padding: 5px;
+        text-align: center;
+
     }
 
 
     /*---------------------------*/
     .header{
         height: 100px;
-        width: 2000px;
         border-bottom: 1px solid #EEE;
         background-color: #f6f6f6;
-    }
-    .container{
-
     }
 
     .section3{
@@ -59,7 +70,17 @@
         display: flex;
         justify-content: space-evenly;
         text-align: center;
+        padding: 10px;
+        
     }
+    .section3__cuadros{
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
     .noticias{
         display: flex;
 
@@ -72,6 +93,7 @@
         display: flex;
         flex-direction: row;
         justify-content:space-evenly;
+        margin-top: 20px;
        
         
         
@@ -100,6 +122,50 @@
         
     }
 
+
+    /* Seccion 5 */
+    .footer{
+        background-color: dimgrey;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .section5{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer_information{
+        
+        width: 30%;
+        text-align: center;
+
+
+    }
+    .enlace_git{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scrum{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .owner{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .scrumteam{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
         
 
 </style>
@@ -125,8 +191,8 @@
 
                 <!--Primer servicio-->
                 <div class="box">
-                    <li><b><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">ADIESTRAMIENTO</a></b></li>
-                    <div class="imagen_s2"><p>
+                    <b><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">ADIESTRAMIENTO</a></b>
+                    <div class="texto_s2"><p>
                         Ofrecemos servicio personalizado para adiestrar a tu hermosa fiera. Si lo que quieres es que tu perrito no muerda a los vecinos y por el contrario, les de lenguetasos y puedas conquistar al lado de tu fiel amigo, nosotros podemos ofrecerte nuestra solución de adiestramiento efectivo.
                     </p></div>
                     <img class="imagen_s2" src="Perro_1.jpg" alt="Perrito tierno">
@@ -134,8 +200,8 @@
 
                 <!--Segundo servicio-->
                 <div class="box">
-                    <li><b><a href="https://sipuedocorrer.com/core-test-mcguill-4-ejercicios/">HIPNOSIS CANINA</a></b></li>
-                    <div class="imagen_s2"><p>
+                    <b><a href="https://sipuedocorrer.com/core-test-mcguill-4-ejercicios/">HIPNOSIS CANINA</a></b>
+                    <div class="texto_s2"><p>
                             Mediante nuestras técnicas hyppen, logramos que tus cachorros queden hipnotisados, eso sí, muy importante, al menos requerimos 10 sesiones para lograr la hipnosis perfecta, que es cuando tu perro se empieza a comportar como un gato. Tan independiente que será el mejor perro - gato.                    
                     </p></div>
                     <img class="imagen_s2" src="Perro_2.jpg" alt="Perrito tierno">
@@ -144,7 +210,7 @@
                 <!--Tercer servicio-->
                 <div class="box">
                     <b><a href="https://sipuedocorrer.com/respirar-y-caminar-fundamental-para-correr-mejor/">CARRERAS POR EL BOSQUE</a></b>
-                    <div class="imagen_s2"><p>
+                    <div class="texto_s2"><p>
                         Las carreras por el bosque son espectaculares para que tu perro se sienta feliz, tan feliz que lo odiaras al verlo tan alegre y tu tristongo trabajando para que el sea feliz. Los paseos en el bosque van acompañados de otros perros, por tanto la interacción es espectacular y única. 
                     </p></div>
                     <img class="imagen_s2" src="Perro_3.jpg" alt="Perrito tierno">
@@ -168,7 +234,7 @@
             <div>
                 <div class= section3__cuadros>
                     <div class="noticia">
-                    <img src="https://www.portafolio.co/files/article_multimedia/uploads/2016/02/18/56c6203db67a5.jpeg" alt="">
+                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2016/02/18/56c6203db67a5.jpeg" alt="">
                 <div>    
                 </div>    
                     </div>
@@ -185,7 +251,7 @@
 
                 <div class= section3__cuadros>
                     <div class="noticia">    
-                    <img src="https://www.portafolio.co/files/article_multimedia/uploads/2020/08/29/5f4acdd2087f2.jpeg" alt="">
+                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2020/08/29/5f4acdd2087f2.jpeg" alt="">
                 <div>    
                 </div>    
                     </div>
@@ -205,7 +271,7 @@
             <div>
                 <div class= section3__cuadros>
                     <div class="noticia"> 
-                    <img src="https://www.portafolio.co/files/article_multimedia/uploads/2019/10/21/5dae449b58dab.jpeg" alt="">
+                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2019/10/21/5dae449b58dab.jpeg" alt="">
                 <div>    
                 </div>    
                     </div>
@@ -221,7 +287,7 @@
                 
                 <div class= section3__cuadros>
                     <div class="noticia">
-                    <img src="https://www.portafolio.co/files/article_multimedia/uploads/2020/05/05/5eb1c38780d43.jpeg" alt="">
+                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2020/05/05/5eb1c38780d43.jpeg" alt="">
                     </div>
                 
                     <div>
@@ -279,10 +345,43 @@
 
         </div>
 
-        <div class="footer">
-            <p>Sección 5</p>
+        <footer class="footer">
+            <br>
+            <div class="section5">
 
-        </div>
+                <div class="footer_information">
+                    <p>Esta página fue diseñada con el fin de aprender y reforzar conceptos de desarrollo web.</p>
+                    <br>
+                    <br>
+                    <div class="enlace_git">
+                        <img src="icon_git.gif" width="20" height="20" alt="asda">&ensp;
+                        <span><a href="https://github.com/sizapatav/semana-1-2">Repositorio</a></span>
+                    </div>
+                </div>
+                <div class="footer_members">
+                    <div class="scrum">
+                        <h4>Scrum Master</h4>&emsp;
+                        <p>Samuel I. Zapata</p>
+                    </div>
+                    <div class="owner">
+                        <h4>Product Owner</h4> &emsp;
+                        <p>Mauricio Hernandez</p>
+                    </div>
+                    <div class="scrumteam">
+                        
+                        <h4>Scrum Team</h4>&emsp;&emsp;
+                        <div class="scrumTeamMembers">
+                            <p>Rafael Fuentes</p>
+                            <p>Edson Bautista</p>
+                            <p>William Giraldo</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <h6 style="text-align: center;">Copyright ©2020 MinTic 2020 Grupo 2</h6>
+
+        </footer>
         
     </div>
     </body>
