@@ -7,6 +7,43 @@
 </head>
 
 <style>
+
+    /* Style de la Sección 2*/
+    .center{
+        text-align: center;
+        color: darkmagenta;
+    }
+    .section2{
+        background-color: rgb(179, 255, 254);
+        padding: 10px;
+    }
+
+    .section2_a{
+        background-color: rgb(179, 255, 254);
+        text-align:justify;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;   
+        padding: 10px;
+    }
+
+    .imagen_s2{
+        width: 250px; 
+        height: 200px;
+        border­radius: 100%;
+        overflow: hidden;        
+    }
+
+    .box {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+
+    /*---------------------------*/
     .header{
         height: 100px;
         width: 2000px;
@@ -54,6 +91,7 @@
         text-align:center;
         
     }
+    
     .cuadros p{
         font-style: italic;
         color: rgb(26, 3, 3);
@@ -62,18 +100,60 @@
         
     }
 
+        
+
 </style>
 
 <body>
+    
     <div class="container">
 
         <div class="header">    
             <p>Sección 1</p>
 
         </div>
-        <div class="section2">
-            <p>Sección 2</p>
+       
+        <!--SECCIÓN DE SERVICIOS--------------------------------------------------->
+        <div class="section2" id="services">
+                                   
+            <!--Titulo principal de la sección -->
+            <div class="center">
+                <b><h1>SERVICIOS OFRECIDOS</h1></b>
+            </div>  
+
+            <div class="section2_a">
+
+                <!--Primer servicio-->
+                <div class="box">
+                    <li><b><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">ADIESTRAMIENTO</a></b></li>
+                    <div class="imagen_s2"><p>
+                        Ofrecemos servicio personalizado para adiestrar a tu hermosa fiera. Si lo que quieres es que tu perrito no muerda a los vecinos y por el contrario, les de lenguetasos y puedas conquistar al lado de tu fiel amigo, nosotros podemos ofrecerte nuestra solución de adiestramiento efectivo.
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_1.jpg" alt="Perrito tierno">
+                </div>
+
+                <!--Segundo servicio-->
+                <div class="box">
+                    <li><b><a href="https://sipuedocorrer.com/core-test-mcguill-4-ejercicios/">HIPNOSIS CANINA</a></b></li>
+                    <div class="imagen_s2"><p>
+                            Mediante nuestras técnicas hyppen, logramos que tus cachorros queden hipnotisados, eso sí, muy importante, al menos requerimos 10 sesiones para lograr la hipnosis perfecta, que es cuando tu perro se empieza a comportar como un gato. Tan independiente que será el mejor perro - gato.                    
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_2.jpg" alt="Perrito tierno">
+                </div>
+                
+                <!--Tercer servicio-->
+                <div class="box">
+                    <b><a href="https://sipuedocorrer.com/respirar-y-caminar-fundamental-para-correr-mejor/">CARRERAS POR EL BOSQUE</a></b>
+                    <div class="imagen_s2"><p>
+                        Las carreras por el bosque son espectaculares para que tu perro se sienta feliz, tan feliz que lo odiaras al verlo tan alegre y tu tristongo trabajando para que el sea feliz. Los paseos en el bosque van acompañados de otros perros, por tanto la interacción es espectacular y única. 
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_3.jpg" alt="Perrito tierno">
+                </div>
+            </div>
+
+
         </div>
+<<<<<<< HEAD
         <br>
         <br>
 
@@ -162,6 +242,12 @@
             
 
             
+=======
+        <!--FIN DE LA SECCIÓN DE SERVICIOS--------------------------------------------------->
+    
+        <div class="section3">
+            <p>Sección 3</p>
+>>>>>>> seccion2
 
         </div>
         <div id="team" class="section4">
