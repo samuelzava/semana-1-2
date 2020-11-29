@@ -92,7 +92,7 @@
   .servicios-cards__card-img {
     max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 7px 7px 0 0;
   }
   
@@ -147,9 +147,11 @@
   
   .integrantes-cards__card-img {
     max-width: 100%;
+    
     width: 100%;
     height: 200 px;
     border-radius: 7px 7px 0 0;
+
   }
   
   .integrantes-cards__card-title {
@@ -163,7 +165,7 @@
   .integrantes-cards__card-description{
       text-align: center;
       padding-left: 1rem;
-      padding-right: 2rem;   
+      padding-right: 2rem;
   }
   /*Fin Integrantes*/
 
@@ -177,10 +179,11 @@
   }
   
   .noticias-title {
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 2rem;
     padding-top: 1rem;
     font-family: 'Georgia', serif;
+    text-align: center;
   }
   
   .noticias-cards {
@@ -204,10 +207,10 @@
   
   .noticias-cards__card-img {
     
-    height: 100%;
-    width: 538px;
-    
+    height: 350px;
+    width: auto;
     border-radius: 7px 7px 0 0;
+    padding-top: 10px;
   }
   
   .noticias-cards__card-atributes {
@@ -215,6 +218,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 15px;
   }
   
   .noticias-cards__card-atributes h3 {
@@ -222,6 +226,7 @@
     text-align: center;
     font-family: 'Verdana', serif;
     font-weight: 500;
+    padding-bottom: 10px;
   }
   
   .noticias-cards__card-atributes p {
@@ -236,7 +241,7 @@
     
     .footer {   
       align-items: center;
-      justify-content: center;  
+      justify-content: center;
       background: linear-gradient(
         90deg,
         rgb(149, 208, 115) 0%,
@@ -283,6 +288,7 @@
 
 
   }
+
   .enlace_git{
       display: flex;
       justify-content: center;
