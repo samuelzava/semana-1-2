@@ -1,387 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina web</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./diseño/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fredoka+One&display=swap" rel="stylesheet" />
 </head>
 
-<style>
-    body{
-        width: 1400px;
-        font-family: 'Arial Narrow';
-    }
-
-    /* Style de la Sección 2*/
-    .center{
-        text-align: center;
-        color: darkmagenta;
-    }
-    .section2{
-        background-color: rgb(179, 255, 254);
-        padding: 10px;
-        margin-top: 20px;
-        
-    }
-
-    .section2_a{
-        background-color: rgb(179, 255, 254);
-        text-align:justify;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;   
-        padding: 10px;
-    }
-
-    .imagen_s2{
-        width: 250px; 
-        height: 200px;
-        border-radius: 100%;
-        overflow: hidden;        
-    }
-
-    .texto_s2{
-        padding: 5%;
-        overflow: hidden;
-        text-align: justify;
-
-    }
-
-    .box {
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-        text-align: center;
-
-    }
-
-
-    /*---------------------------*/
-    .header{
-        height: 100px;
-        border-bottom: 1px solid #EEE;
-        background-color: #f6f6f6;
-    }
-
-    .section3{
-        background-color: rgb(0, 128, 96);
-        display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 10px;
-        
-    }
-    .section3__cuadros{
-        justify-content: space-evenly;
-        align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-
-    .noticias{
-        display: flex;
-
-    }
-
-
-
-    .section4{
-        background-color: rgb(240, 185, 102);
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        margin-top: 20px;
-       
-        
-        
-    }
-
-    .cuadros {
-        
-        padding: 5px;
-        margin: 5px; 
-        border: 5px;
-        
-        
-    }
-    .cuadros h3{
-        font-style:unset;
-        color: rgb(7, 7, 48);
-        text-align:center;
-        
-    }
-    
-    .cuadros p{
-        font-style: italic;
-        color: rgb(26, 3, 3);
-        text-align:justify;
-        width: 250px;
-        
-    }
-
-
-    /* Seccion 5 */
-    .footer{
-        background-color: dimgrey;
-        height: 300px;
-        margin-top: 20px;
-    }
-
-    .section5{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .footer_information{
-        
-        width: 30%;
-        text-align: center;
-
-
-    }
-    .enlace_git{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .scrum{
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-
-    .owner{
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-
-    .scrumteam{
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-        
-
-</style>
-
 <body>
-    
-    <div class="container">
-
-        <div class="header">    
-            <p>Sección 1</p>
-
-        </div>
+   <header class="header">
+        <nav class="header__nav">
+          <a href="#" class="header__nav-title">WorkShop Week 1</a>
+          <ul class="header__nav-menu" id="">
+            <li><a href="#" class="header__nav-menu__link">Inicio</a></li>
+            <li>
+              <a href="#servicios" class="header__nav-menu__link">Servicios</a>
+            </li>
+            <li><a href="#noticias" class="header__nav-menu__link">Noticias</a></li>
+            <li><a href="#team" class="header__nav-menu__link">Equipo</a></li>
+          </ul>
+        </nav>
+        <div class="header__background"></div>
+      </header>
+    <main>
        
         <!--SECCIÓN DE SERVICIOS--------------------------------------------------->
-        <div class="section2" id="services">
-                                   
-            <!--Titulo principal de la sección -->
-            <div class="center">
-                <b><h1>SERVICIOS OFRECIDOS</h1></b>
-            </div>  
-
-            <div class="section2_a">
-
-                <!--Primer servicio-->
-                <div class="box">
-                    <b><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">ADIESTRAMIENTO</a></b>
-                    <div class="texto_s2"><p>
-                        Ofrecemos servicio personalizado para adiestrar a tu hermosa fiera. Si lo que quieres es que tu perrito no muerda a los vecinos y por el contrario, les de lenguetasos y puedas conquistar al lado de tu fiel amigo, nosotros podemos ofrecerte nuestra solución de adiestramiento efectivo.
-                    </p></div>
-                    <img class="imagen_s2" src="Perro_1.jpg" alt="Perrito tierno">
-                </div>
-
-                <!--Segundo servicio-->
-                <div class="box">
-                    <b><a href="https://sipuedocorrer.com/core-test-mcguill-4-ejercicios/">HIPNOSIS CANINA</a></b>
-                    <div class="texto_s2"><p>
-                            Mediante nuestras técnicas hyppen, logramos que tus cachorros queden hipnotisados, eso sí, muy importante, al menos requerimos 10 sesiones para lograr la hipnosis perfecta, que es cuando tu perro se empieza a comportar como un gato. Tan independiente que será el mejor perro - gato.                    
-                    </p></div>
-                    <img class="imagen_s2" src="Perro_2.jpg" alt="Perrito tierno">
-                </div>
-                
-                <!--Tercer servicio-->
-                <div class="box">
-                    <b><a href="https://sipuedocorrer.com/respirar-y-caminar-fundamental-para-correr-mejor/">CARRERAS POR EL BOSQUE</a></b>
-                    <div class="texto_s2"><p>
-                        Las carreras por el bosque son espectaculares para que tu perro se sienta feliz, tan feliz que lo odiaras al verlo tan alegre y tu tristongo trabajando para que el sea feliz. Los paseos en el bosque van acompañados de otros perros, por tanto la interacción es espectacular y única. 
-                    </p></div>
-                    <img class="imagen_s2" src="Perro_3.jpg" alt="Perrito tierno">
-                </div>
+        <section class="servicios" id="servicios">
+            <h3 class="servicios-title">Nuestros Servicios</h3>
+            <div class="servicios-cards">
+            <!--Primer servicio-->
+              <div class="servicios-cards__card">
+                <img src="Perro_1.jpg" alt="Perrito tierno" class="servicios-cards__card-img" />
+                <h4 class="servicios-cards__card-title"><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">ADIESTRAMIENTO</a></h4>
+                <p class="servicios-cards__card-description">
+                 Ofrecemos servicio personalizado para adiestrar a tu hermosa fiera. Si lo que quieres es que tu perrito no muerda a los vecinos y por el contrario, les de lenguetasos y puedas conquistar al lado de tu fiel amigo, nosotros podemos ofrecerte nuestra solución de adiestramiento efectivo.
+                </p>
+              </div>
+              <!--Segundo servicio-->
+              <div class="servicios-cards__card">
+                <img src="Perro_2.jpg" alt="Perrito tierno" class="servicios-cards__card-img" />
+                <h4 class="servicios-cards__card-title">HIPNOSIS CANINA </h4>
+                <p class="servicios-cards__card-description">
+                  Mediante nuestras técnicas hyppen, logramos que tus cachorros queden hipnotisados, eso sí, muy importante, al menos requerimos 10 sesiones para lograr la hipnosis perfecta, que es cuando tu perro se empieza a comportar como un gato. Tan independiente que será el mejor perro - gato.
+                </p>
+              </div>
+              <!--Tercer servicio-->
+              <div class="servicios-cards__card">
+                <img src="Perro_3.jpg" alt="Perrito tierno" class="servicios-cards__card-img" />
+                <h4 class="servicios-cards__card-title">CARRERAS POR EL BOSQUE</h4>
+                <p class="servicios-cards__card-description">
+                  Las carreras por el bosque son espectaculares para que tu perro se sienta feliz, tan feliz que lo odiaras al verlo tan alegre y tu tristongo trabajando para que el sea feliz. Los paseos en el bosque van acompañados de otros perros, por tanto la interacción es espectacular y única.
+                </p>
+              </div>
             </div>
-
-
-        </div>
+      </section>
         <br>
         <br>
-
-        <h2>NOTICIAS</h2>
-        <div section id="news" class="section3"> 
+        <section class="noticias" id="noticias">
+            <h2 class="noticias-title">NOTICIAS</h2><hr>
+                <div class="noticias-cards">
+                    <div class="noticias-cards__card">
+                        <div class="noticias-cards__card-atributes">
+                            <h3>Software Colombiano se abre camino a nivel internacional</h3>
+                                <p>La rueda internacional de negocios SOFTIC 2020 cerró con más de 1.000 citas y 1,6 millones de dólares en ventas de software colombiano. Tras la coyuntura mundial, el evento acogió la virtualidad y aprovechó la oportunidad de brindar una experiencia que permitiera a compradores y exportadores el encuentro comercial perfecto para concretar negocios, y continuar con el crecimiento como el cuarto mercado TI más grande.
+                                    <a href="https://www.portafolio.co/innovacion/software-colombiano-se-abre-camino-a-nivel-internacional-545125/">Leer noticia</a></p>
+                                        <img src="https://www.portafolio.co/files/article_multimedia/uploads/2016/02/18/56c6203db67a5.jpeg" class="noticias-cards__card-img" alt="" />
+                                        
+                        </div>
+                    </div>
         
-        <br>
-        <br>
-            <div>
-
-            </div>
-
-            <div>
-                <div class= section3__cuadros>
-                    <div class="noticia">
-                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2016/02/18/56c6203db67a5.jpeg" alt="">
-                <div>    
-                </div>    
+                    <div class="noticias-cards__card">
+                        <div class="noticias-cards__card-atributes">
+                            <h3>Elon Musk avanza en su sueño de conectar al cerebro con una máquina</h3>
+                                <p>La empresa Neuralink, en la que Elon Musk, el propietario de la fabricante de automóviles Tesla y la compañía espacial SpaceX, es el socio principal, ha probado con éxito en cerdos un chip que implantado en el cráneo permite medir la actividad cerebral, pero va a tener muchas más aplicaciones.
+                                    <a href="https://www.portafolio.co/innovacion/elon-musk-avanza-en-su-sueno-de-conectar-al-cerebro-con-un-dispositivo-544107">Leer noticia</a></p>
+                                        <img src="https://www.portafolio.co/files/article_multimedia/uploads/2020/08/29/5f4acdd2087f2.jpeg" class="noticias-cards__card-img" alt="" />
+                                        
+                        </div>
                     </div>
-                    <h2>Software colombiano se abre camino a nivel internacional</h2>
-                    <p>La rueda internacional de negocios SOFTIC 2020 cerró con más de 1.000 citas y 1,6 millones de dólares en ventas de software colombiano. Tras la coyuntura mundial, el evento acogió la virtualidad y aprovechó la oportunidad de brindar una experiencia que permitiera a compradores y exportadores el encuentro comercial perfecto para concretar negocios, y continuar con el crecimiento como el cuarto mercado TI más grande.</p>
-                    <a href="https://www.portafolio.co/innovacion/software-colombiano-se-abre-camino-a-nivel-internacional-545125">Leer noticia >></a>
-                </div>
-                <br>
-                <br>
-
-
-                <div>    
-                </div> 
-
-                <div class= section3__cuadros>
-                    <div class="noticia">    
-                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2020/08/29/5f4acdd2087f2.jpeg" alt="">
-                <div>    
-                </div>    
+        
+                    <div class="noticias-cards__card">
+                        <div class="noticias-cards__card-atributes">
+                            <h3>La visión humanística de la tecnología</h3>
+                                <p>Hace más de 10 años, Steve Jobs compartió con el mundo una frase que rompió varios esquemas, la cual a muchos se nos quedó grabada en nuestra memoria: “La tecnología por sí sola no es suficiente” En ese entonces, el presidente de Apple utilizó estas palabras para hacer énfasis en la concepción humanista de la tecnología. Un principio que hace parte de las raíces de esta revolución digital que estamos viviendo.
+                                    <a href="https://www.portafolio.co/innovacion/la-vision-humanistica-de-la-tecnologia-543701">Leer noticia</a></p>
+                                        <img src="https://www.portafolio.co/files/article_multimedia/uploads/2019/10/21/5dae449b58dab.jpeg" class="noticias-cards__card-img" alt="" />
+                                        
+                        </div>
                     </div>
-                    <h2>Elon Musk avanza en su sueño de conectar al cerebro con una máquina</h2>
-                    <p>La empresa Neuralink, en la que Elon Musk, el propietario de la fabricante de automóviles Tesla y la compañía espacial SpaceX, es el socio principal, ha probado con éxito en cerdos un chip que implantado en el cráneo permite medir la actividad cerebral, pero va a tener muchas más aplicaciones.</p>
-                    <a href="https://www.portafolio.co/innovacion/elon-musk-avanza-en-su-sueno-de-conectar-al-cerebro-con-un-dispositivo-544107">Leer noticia >></a>
-                </div>
-                <br>
-                <br>
-
-
-                <div>    
-                </div> 
-
-            </div>
-
-            <div>
-                <div class= section3__cuadros>
-                    <div class="noticia"> 
-                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2019/10/21/5dae449b58dab.jpeg" alt="">
-                <div>    
-                </div>    
-                    </div>
-                    <h2>La visión humanística de la tecnología</h2>
-                    <p>Hace más de 10 años, Steve Jobs compartió con el mundo una frase que rompió varios esquemas, la cual a muchos se nos quedó grabada en nuestra memoria: “La tecnología por sí sola no es suficiente” En ese entonces, el presidente de Apple utilizó estas palabras para hacer énfasis en la concepción humanista de la tecnología. Un principio que hace parte de las raíces de esta revolución digital que estamos viviendo..</p>
-                    <a href="https://www.portafolio.co/innovacion/la-vision-humanistica-de-la-tecnologia-543701">Leer noticia >></a>
-                </div>
-                <br>
-                <br>
-                
-                <div>    
-                </div> 
-                
-                <div class= section3__cuadros>
-                    <div class="noticia">
-                    <img width="400" src="https://www.portafolio.co/files/article_multimedia/uploads/2020/05/05/5eb1c38780d43.jpeg" alt="">
-                    </div>
-                
-                    <div>
-                    <h2>Tecnología al servicio de la reactivación empresarial en Colombia</h2>
-                    <p>La compañía Identidad Technologies lanzó en Colombia ‘Preventic’, una solución tecnológica para el sector empresarial que integra todos los elementos necesarios para garantizar el monitoreo y seguimiento estricto y continuo de la salud los empleados, tanto en oficinas, calle o incluso en sus casas, mientras están trabajando..</p>
-                    <a href="https://www.portafolio.co/innovacion/tecnologia-al-servicio-de-la-reactivacion-empresarial-en-colombia-544224">Leer noticia >></a>
-                    </div>
-                    <br>
-                    <br>
-                    
-                </div>
-
-            </div> 
-            </div>
-
-            
-            
-
-            
-
-        </div>
-        <div id="team" class="section4">
-            
-            <div class="cuadros">
-                <img style="width: 250px; height: 250px;" src="Samuel Zapata.jpg" alt="Samuel Zapata">
-                <h3>Samuel Zapata</h3>
-                <p>Edad: 23 Años</p>
-                <p>Pasatiempos:Apasionado por la óptica, microscopía, y toco viola en mis tiempos libres.</p>
-            </div>
-            <div class="cuadros">
-                <img style="width: 250px; height: 250px;"src="Mauricio Hernandez.jpg" alt="Mauricio Hernandez">
-                <h3>Mauricio Hernandez</h3>
-                <p>Edad: 36 Años</p>
-                <p>Pasatiempo: Leer, estudiar temas de tecnología, running, y darle al Moderm Warfare.</p>
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="Rafael Fuentes.JPG" alt="Rafael Fuentes">
-                <h3>Rafael Fuentes</h3>
-                <p>Edad: 33 Años</p>
-                <p>Pasatiempo: Tecnología, Cine, Videojuegos, Deporte.</p>
-                
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="Edson Bautista.JPG" alt="Edson Bautista">
-                <h3>Edson Bautista</h3>
-                <p>Edad: 33 Años</p>
-                <p>Pasatiempo: Running y escribir.</p>
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="William Giraldo.jpg" alt="William Giraldo">
-                <h3>William Giraldo</h3>
-                <p>Edad: 36 Años</p>
-                <p>Pasatiempo: Ajedrez y la Buena Comida.</p>
-            </div>
-
-        </div>
-
-        <footer class="footer">
-            <br>
-            <div class="section5">
-
-                <div class="footer_information">
-                    <p>Esta página fue diseñada con el fin de aprender y reforzar conceptos de desarrollo web.</p>
-                    <br>
-                    <br>
-                    <div class="enlace_git">
-                        <img src="icon_git.gif" width="20" height="20" alt="asda">&ensp;
-                        <span><a href="https://github.com/sizapatav/semana-1-2">Repositorio</a></span>
-                    </div>
-                </div>
-                <div class="footer_members">
-                    <div class="scrum">
-                        <h4>Scrum Master</h4>&emsp;
-                        <p>Samuel I. Zapata</p>
-                    </div>
-                    <div class="owner">
-                        <h4>Product Owner</h4> &emsp;
-                        <p>Mauricio Hernandez</p>
-                    </div>
-                    <div class="scrumteam">
-                        
-                        <h4>Scrum Team</h4>&emsp;&emsp;
-                        <div class="scrumTeamMembers">
-                            <p>Rafael Fuentes</p>
-                            <p>Edson Bautista</p>
-                            <p>William Giraldo</p>
+        
+                    <div class="noticias-cards__card">
+                        <div class="noticias-cards__card-atributes">
+                            <h3>Tecnología al servicio de la reactivación empresarial en Colombia</h3>
+                                <p>La compañía Identidad Technologies lanzó en Colombia ‘Preventic’, una solución tecnológica para el sector empresarial que integra todos los elementos necesarios para garantizar el monitoreo y seguimiento estricto y continuo de la salud los empleados, tanto en oficinas, calle o incluso en sus casas, mientras están trabajando.
+                                    <a href="https://www.portafolio.co/innovacion/tecnologia-al-servicio-de-la-reactivacion-empresarial-en-colombia-544224">Leer noticia</a></p>
+                                        <img src="https://www.portafolio.co/files/article_multimedia/uploads/2020/05/05/5eb1c38780d43.jpeg" class="noticias-cards__card-img" alt="" />
+                                        
                         </div>
                     </div>
                     
                 </div>
-            </div>
-            <h6 style="text-align: center;">Copyright ©2020 MinTic 2020 Grupo 2</h6>
+        </section>
 
-        </footer>
+        <section class="integrantes" id="team">
+            <h3 class="integrantes-title">INTEGRANTES</h3>
+            <div class="integrantes-cards">
+              <div class="integrantes-cards__card">
+                <img src="Samuel Zapata.jpg" alt="" class="integrantes-cards__card-img" />
+                <h4>Samuel Zapata</h4>
+                <p>Edad: 23 Años</p>
+                <p>Apasionado por la óptica, microscopía, y toco viola en mis tiempos libres</p>
+              </div>
+              <div class="integrantes-cards__card">
+                <img src="Mauricio Hernandez.jpg" alt="Mauricio Hernandez" class="integrantes-cards__card-img" />
+        
+                <h4>Mauricio Hernandez</h4>
+                <p>Edad: 36 Años</p>
+                <p>Leer, estudiar temas de tecnología, running, y darle al Moderm Warfare.</p>
+              </div>
+              <div class="integrantes-cards__card">
+                <img src="Rafael Fuentes.JPG" alt="Rafael Fuentes" class="integrantes-cards__card-img" />
+                <h4>Rafael Fuentes</h4>
+                <p>Edad: 33 Años</p>
+                <p>Tecnología, Cine, Videojuegos, Deporte.</p>
+              </div>
+              <div class="integrantes-cards__card">
+                <img src="Edson Bautista.JPG" alt="Edson Bautista" class="integrantes-cards__card-img" />
+                <h4>Edson Bautista</h4>
+                <p>Edad: 33 Años</p>
+                <p>Running y escribir.</p>
+              </div>
+              <div class="integrantes-cards__card">
+                <img src="William Giraldo.jpg" alt="William Giraldo" class="integrantes-cards__card-img" />
+                <h4>William Giraldo</h4>
+                <p>36 años, Ingeniero de Telecomuicaciones. Apasionado por el ajezdrez y la buena comida</p>
+              </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class=footer>
+              <div class="footer-cards">
+                <div class="footer-cards__card">
+                  <h4 class="footer-cards__card-title">Descripción</h4>
+                  <p class="service-cards__card-description">
+                  <p>Esta página fue diseñada con el fin de aprender y reforzar conceptos de desarrollo web.</p>
+                              <br>
+                              <br>
+                              <div class="enlace_git">
+                                  <img src="icon_git.gif" width="20" height="20" alt="">&ensp;
+                                  <span><a href="https://github.com/sizapatav/semana-1-2">Repositorio en Github</a></span>
+                              </div>
+                 </div>
+                          <div class="footer_members">
+                              <div class="scrum">
+                                  <h4>Scrum Master</h4>&emsp;
+                                  <p>Samuel I. Zapata</p>
+                              </div>
+                              <div class="owner">
+                                  <h4>Product Owner</h4> &emsp;
+                                  <p>Mauricio Hernandez</p>
+                              </div>
+                              <div class="scrumteam">
+                                  
+                                  <h4>Scrum Team</h4>&emsp;&emsp;
+                                  <div class="scrumTeamMembers">
+                                      <p>Rafael Fuentes</p>
+                                      <p>Edson Bautista</p>
+                                      <p>William Giraldo</p>
+                                  </div>
+                              </div>
+                              
+                          </div>
+              </div>
+              <h6 style="text-align: center;">Copyright ©2020 MinTic 2020 Grupo 2</h6>
+          
+                  
+            </section>
+          </footer>
+
+        
+
+
+    </main>
+
+ 
         
     </div>
     </body>
