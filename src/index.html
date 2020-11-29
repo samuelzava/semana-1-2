@@ -7,45 +7,62 @@
 </head>
 
 <style>
+    body{
+        width: 1300px;
+        
+    }
     .header{
         height: 100px;
-        width: 2000px;
+        width: 100%;
         border-bottom: 1px solid #EEE;
         background-color: #f6f6f6;
     }
     .container{
 
     }
-    .section4{
-        background-color: rgb(240, 185, 102);
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-       
-        
-        
+    .footer{
+        background-color: dimgrey;
+        height: 300px;
+        margin-top: 20px;
     }
 
-    .cuadros {
-        
-        padding: 5px;
-        margin: 5px; 
-        border: 5px;
-        
-        
+    .section5{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .cuadros h3{
-        font-style:unset;
-        color: rgb(7, 7, 48);
-        text-align:center;
+
+    .footer_information{
         
+        width: 30%;
+        text-align: center;
+
+
     }
-    .cuadros p{
-        font-style: italic;
-        color: rgb(26, 3, 3);
-        text-align:justify;
-        width: 250px;
-        
+    .enlace_git{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_members{
+
+    }
+    .scrum{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .owner{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .scrumteam{
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
 </style>
@@ -64,46 +81,48 @@
             <p>Sección 3</p>
 
         </div>
-        <div id="team" class="section4">
-            
-            <div class="cuadros">
-                <img style="width: 250px; height: 250px;" src="Samuel Zapata.jpg" alt="Samuel Zapata">
-                <h3>Samuel Zapata</h3>
-                <p>Edad: 23 Años</p>
-                <p>Pasatiempos:Apasionado por la óptica, microscopía, y toco viola en mis tiempos libres.</p>
-            </div>
-            <div class="cuadros">
-                <img style="width: 250px; height: 250px;"src="Mauricio Hernandez.jpg" alt="Mauricio Hernandez">
-                <h3>Mauricio Hernandez</h3>
-                <p>Edad: 36 Años</p>
-                <p>Pasatiempo: Leer, estudiar temas de tecnología, running, y darle al Moderm Warfare.</p>
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="Rafael Fuentes.JPG" alt="Rafael Fuentes">
-                <h3>Rafael Fuentes</h3>
-                <p>Edad: 33 Años</p>
-                <p>Pasatiempo: Tecnología, Cine, Videojuegos, Deporte.</p>
-                
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="Edson Bautista.JPG" alt="Edson Bautista">
-                <h3>Edson Bautista</h3>
-                <p>Edad: 33 Años</p>
-                <p>Pasatiempo: Running y escribir.</p>
-            </div>
-            <div class="cuadros">
-                <img  style="width: 250px; height: 250px;" src="William Giraldo.jpg" alt="William Giraldo">
-                <h3>William Giraldo</h3>
-                <p>Edad: 36 Años</p>
-                <p>Pasatiempo: Ajedrez y la Buena Comida.</p>
-            </div>
+        <div class="section4">
+            <p>Sección 4</p>
 
         </div>
 
-        <div class="footer">
-            <p>Sección 5</p>
+        <footer class="footer">
+            <br>
+            <div class="section5">
 
-        </div>
+                <div class="footer_information">
+                    <p>Esta página fue diseñada con el fin de aprender y reforzar conceptos de desarrollo web.</p>
+                    <br>
+                    <br>
+                    <div class="enlace_git">
+                        <img src="icon_git.gif" width="20" height="20" alt="asda">&ensp;
+                        <span><a href="https://github.com/sizapatav/semana-1-2">Repositorio</a></span>
+                    </div>
+                </div>
+                <div class="footer_members">
+                    <div class="scrum">
+                        <h4>Scrum Master</h4>&emsp;
+                        <p>Samuel I. Zapata</p>
+                    </div>
+                    <div class="owner">
+                        <h4>Product Owner</h4> &emsp;
+                        <p>Mauricio Hernandez</p>
+                    </div>
+                    <div class="scrumteam">
+                        
+                        <h4>Scrum Team</h4>&emsp;&emsp;
+                        <div class="scrumTeamMembers">
+                            <p>Rafael Fuentes</p>
+                            <p>Edson Bautista</p>
+                            <p>William Giraldo</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <h6 style="text-align: center;">Copyright ©2020 MinTic 2020 Grupo 2</h6>
+
+        </footer>
         
     </div>
     </body>
