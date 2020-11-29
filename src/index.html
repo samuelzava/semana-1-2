@@ -7,9 +7,13 @@
 </head>
 
 <style>
+    body{
+        width: 1300px;
+        
+    }
     .header{
         height: 100px;
-        weigth: 2000px
+        width: 100%;
         border-bottom: 1px solid #EEE;
         background-color: #f6f6f6;
     }
@@ -18,11 +22,21 @@
     }
     .footer{
         background-color: dimgrey;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .section5{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
+
     .footer_information{
+        
+        width: 30%;
+        text-align: center;
+
 
     }
     .enlace_git{
@@ -30,7 +44,26 @@
         justify-content: center;
         align-items: center;
     }
+    .footer_members{
 
+    }
+    .scrum{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .owner{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .scrumteam{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 
 </style>
 
@@ -54,19 +87,40 @@
         </div>
 
         <footer class="footer">
-            <!-- <p>Sección 5</p> -->
-            <div class="footer_information">
-                <p>Motivación del proyecto</p>
-                <div class="enlace_git">
-                    <img src="icon_git.gif" width="20" height="20" alt="asda">
-                    <span style="">Work.</span>
+            <br>
+            <div class="section5">
+
+                <div class="footer_information">
+                    <p>Esta página fue diseñada con el fin de aprender y reforzar conceptos de desarrollo web.</p>
+                    <br>
+                    <br>
+                    <div class="enlace_git">
+                        <img src="icon_git.gif" width="20" height="20" alt="asda">&ensp;
+                        <span><a href="https://github.com/sizapatav/semana-1-2">Repositorio</a></span>
+                    </div>
+                </div>
+                <div class="footer_members">
+                    <div class="scrum">
+                        <h4>Scrum Master</h4>&emsp;
+                        <p>Samuel I. Zapata</p>
+                    </div>
+                    <div class="owner">
+                        <h4>Product Owner</h4> &emsp;
+                        <p>Mauricio Hernandez</p>
+                    </div>
+                    <div class="scrumteam">
+                        
+                        <h4>Scrum Team</h4>&emsp;&emsp;
+                        <div class="scrumTeamMembers">
+                            <p>Rafael Fuentes</p>
+                            <p>Edson Bautista</p>
+                            <p>William Giraldo</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div>
-                <p>Nombres</p>
-                <p>nombres2</p>
-                <p>nombre3</p>
-            </div>
+            <h6 style="text-align: center;">Copyright ©2020 MinTic 2020 Grupo 2</h6>
 
         </footer>
         
