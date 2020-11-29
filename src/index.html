@@ -7,6 +7,42 @@
 </head>
 
 <style>
+    body{
+        font-family: sans-serif;
+        width: 1200px;
+    }
+    /* Style de la Sección 2*/
+    .section2{
+        background-color: rgb(66, 245, 239);
+         
+    }
+
+    .section2_a{
+        background-color: rgb(66, 245, 239);
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;   
+        border­radius: 130px;
+        padding: 50px;
+    }
+
+    .imagen_s2{
+        width: 250px; 
+        height: 250px;
+        border­radius: 100%;
+        overflow: hidden;        
+    }
+
+    .box {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+
+    /*---------------------------*/
     .header{
         height: 100px;
         width: 2000px;
@@ -40,6 +76,7 @@
         text-align:center;
         
     }
+    
     .cuadros p{
         font-style: italic;
         color: rgb(26, 3, 3);
@@ -48,22 +85,62 @@
         
     }
 
+        
+
 </style>
 
 <body>
+    
     <div class="container">
 
         <div class="header">    
             <p>Sección 1</p>
 
         </div>
-        <div class="section2">
-            <p>Sección 2</p>
-            <h3>SERVICIOS DE NOSOTROS</h3>
+       
+        <!--SECCIÓN DE SERVICIOS--------------------------------------------------->
+        <div class="section2" id="services">
+                                   
+            <!--Titulo principal de la sección -->
+            <div>
+                <b><h2>SERVICIOS OFRECIDO</h2></b>
+                <P>Ofrecemos los siguientes servicios para ti y tus animales</P>
+            </div>  
 
+            <div class="section2_a">
+
+                <!--Primer servicio-->
+                <div class="box">
+                    <li><b><a href="https://sipuedocorrer.com/running-un-catalizador-para-el-alma/">Running coach</a></b></li>
+                    <div class="imagen_s2"><p>
+                        Ofrecemos servicio personalizado para atender 
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_1.jpg" alt="Perrito tierno">
+                </div>
+
+                <!--Segundo servicio-->
+                <div class="box">
+                    <li><b><a href="https://sipuedocorrer.com/core-test-mcguill-4-ejercicios/">Ejercicios core</a></b></li>
+                    <div class="imagen_s2"><p>
+                        Mediante el Core test McGuill podemos identificar cómo se encuentra esa zona de nuestro cuerpo y de acuerdo al resultado, determinar cuales son los ejercicios más convenientes.
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_2.jpg" alt="Perrito tierno">
+                </div>
+                
+                <!--Tercer servicio-->
+                <div class="box">
+                    <b><a href="https://sipuedocorrer.com/respirar-y-caminar-fundamental-para-correr-mejor/">Cómo respirar</a></b>
+                    <div class="imagen_s2"><p>
+                        respirar y caminar es fundamental cuando deseamos iniciar en el mundo del running y sea cual sea nuestro objetivo, siempre queremos hacerlo más rápido o incrementar las distancias recorridas.
+                    </p></div>
+                    <img class="imagen_s2" src="Perro_3.jpg" alt="Perrito tierno">
+                </div>
+            </div>
 
 
         </div>
+        <!--FIN DE LA SECCIÓN DE SERVICIOS--------------------------------------------------->
+    
         <div class="section3">
             <p>Sección 3</p>
 
